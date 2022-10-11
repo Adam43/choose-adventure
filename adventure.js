@@ -14,27 +14,29 @@ let enterCave = confirm(name + ", it has seem that you have stubbled upon a cave
 //alert(enterCave)
 // give user the option to confirm thier choice 
 //Story 1.1
-if (enterCave.lowerCase() == true) {
+if (enterCave.lowerCase() == true) { //1.1
    alert("You have choosen to go in! You are scared but brave and went in.");
 
    let lightChoice = prompt("Now that you're in the cave you see that there are 3 flashlights to chose from. A 'medieval lighter', 'flash light', and 'iphone'. Which one do you choose?");
    
-   if (lightChoice.lowerCase() == "lamp") {
+   if (lightChoice.lowerCase() == "lamp") { //2.1
        alert("Cool, this is like the movies!");
        alert("*Turn Lights On*");
 
-       let lampLight = confirm("Do you want to ")
-       //let lampLight = prompt("OH MY GOSHHH THERE'S A NASTY GROUP OF DARK WIZARDS");
+       let lampLight = confirm("Do you want to use the flash light")
 
-       if
+       if (lampLight.lowerCase() == "true"){ //3.1
+        alert("OH MY GOSHHH THERE'S A NASTY GROUP OF DARK WIZARDS")
+        alert("*EVIL DARK WIZARDS ATTACK*....CONFRINGO!!")
+       }else{ //END 3.1
+        alert("WOAH IS THAT MAGIC??")
+        alert("AHHHH X(")
+       }
     }
-   }
-
-   
  //  return yes //doesn't work 
 //user chooses "OK"
 } else if {
-    alert("You have decided to turn away and head to the woods because you are too terrified.");
+    alert("You have decided to turn away and head to the woods because you are too terrified."); //2.2
 
     let weapon = prompt("The moon light has spot lightend you some weapons for your trip. There is 'umbrella', 'twinky' or a 'bag of poop'...choose ONE!)
 
@@ -53,7 +55,7 @@ else if (lightChoice.lowerCase() == "flash light"){
 } else {(lightChoice.lowerCase() == "iphone")
     alert("Damn this on 10%")
 }
-}
+
 
 alert("You have chosen to use the " + lightChoice)
 alert("Continue ahead Young " + name)
